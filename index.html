@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Crud System</title>
+
+</head>
+
+<body>
+  <h1 class="  text-center  fw-lighter w-75  m-auto text-capitalize text-white fw-bold"> CRUD System</h1>
+  <div class=" container w-75  m-auto  p-4 mt-4 border bg-white rounded-3">
+
+    <div class="mb-2">
+      <label for="proudctName"> proudct Name</label>
+      <input id="proudctName"  type="text" class=" i form-control">
+    <div id="alerName" class=" alert alert-danger mt-2  fw-light  d-none text-danger"><small> name must start with one capital letter and then samll 1-15</small></div>
+    </div>
+    <div class="mb-2">
+      <label for="proudctPrice"> proudct Price</label>
+      <input id="proudctPrice" type="text" class=" form-control">
+
+    </div>
+    <div class="mb-2">
+      <label for="proudctCategory"> proudct Category</label>
+      <input id="proudctCategory" type="text" class=" form-control">
+
+    </div>
+    <div class="mb-2">
+      <label for="proudctDesc"> proudct Desc</label>
+      <textarea id="proudctDesc" type="text" class=" form-control"></textarea>
+
+    </div>
+    <button id="addButtom" class=" px-4 m-2 btn  btn-outline-info"> Add Proudact </button>
+    <input id="serchInput"  type="text " placeholder="serah" class=" form-control m-2  ">
+ 
+    
+  </div>
+<div class="col-md-9 m-auto  bg-white  overflow-auto p-3 mt-3 rounded-3 ">
+    <table class="table   table-striped  m-2">
+      <thead>
+   
+         <th>inex</th>
+          <th>name</th>
+          <th>Category</th>
+          <th>price</th>
+          <th>description</th>
+          <th>update</th>
+          <th>delete</th>
+      </thead>
+      <tbody id="tboddy" class="">
+    
+        
+      </tbody>
+    </table>
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+#demo{
+    position: relative;
+}
+body{
+    font-weight: bolder;
+ 
+    height: 100vh;
+    cursor: pointer;
+    background-color: #212529;
+}
